@@ -540,6 +540,14 @@ img { max-width: 100%; height: auto; display: block; }
   border: 1px solid var(--border);
 }
 
+.cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+
 .game-detail-meta {
   flex: 1;
   display: flex;
