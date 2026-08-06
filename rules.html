@@ -36,11 +36,79 @@
 
   <section class="section">
     <div class="rules-list" id="rulesList">
-      <div class="game-card-placeholder">
-        <div class="placeholder-icon">📖</div>
-        <h3>规则书待上传</h3>
-        <p>主人提供规则书文件后，蓝会整理并展示在这里，支持在线浏览和 PDF 下载。</p>
-      </div>
+      <article class="rule-card" id="gensou-gakushou">
+        <h2>🎵 幻想乐章 · 完整规则</h2>
+        
+        <div class="rule-section">
+          <h3>游戏概述</h3>
+          <p>扮演幻想乡的乐师，根据手中的乐章、音符牌以及场上的音符队列制定计划，在游戏过程中尽可能多地完成乐章以获取分数。</p>
+        </div>
+
+        <div class="rule-section">
+          <h3>游戏配件</h3>
+          <ul>
+            <li><strong>40 张</strong> 乐章牌</li>
+            <li><strong>105 张</strong> 音符牌（7×6 单音符牌 + 7×4 特殊音符牌 + 7×4 双音符牌 + 7 张彩虹牌）</li>
+            <li><strong>11 张</strong> 角色牌</li>
+            <li><strong>10 枚</strong> 得分指示物</li>
+          </ul>
+        </div>
+
+        <div class="rule-section">
+          <h3>开局准备</h3>
+          <ol>
+            <li>将角色牌、音符牌与乐章牌分别混洗，置于场上作为各自牌库</li>
+            <li>抽取两张角色牌，选择一张保留；另一张移出游戏</li>
+            <li>抽取四张乐章牌，保留两张作为初始乐章手牌（仅自己可见），其余洗回牌堆</li>
+            <li>抽取五张音符牌，选择一张弃置，其余保留为初始手牌</li>
+            <li>将弃置的牌混洗后随机排列为音符队列，从音符牌库抽牌填补队尾直至满六张</li>
+            <li>选择起始玩家，游戏开始</li>
+          </ol>
+        </div>
+
+        <div class="rule-section">
+          <h3>游戏流程</h3>
+          <p>从起始玩家开始，以逆时针顺序进行回合。每回合包含以下阶段：</p>
+          <ol>
+            <li><strong>回合开始阶段</strong>：按需处理持续效果</li>
+            <li><strong>摸牌阶段</strong>：从音符牌库抽两张加入手牌</li>
+            <li><strong>行动阶段</strong>：从下列行动中选择两项依次执行（可重复选择）
+              <ul>
+                <li><strong>切谱</strong>：弃置一张乐章牌，从乐章牌库抽三张，选一张加入手牌，其余放回牌堆底</li>
+                <li><strong>和声</strong>：弃置音符队列中三张相连且包含同一唱名的牌，从音符牌库抽两张加入手牌</li>
+                <li><strong>取材</strong>：从音符牌库抽两张展示，选一张置于音符队列任意位置，另一张弃置</li>
+                <li><strong>变奏</strong>：将音符队列中一张牌取出，放入队列中任意位置</li>
+                <li><strong>修饰</strong>：选择音符队列中的一张牌与一张手牌交换</li>
+                <li><strong>成曲</strong>：打出一张乐章牌并弃置相应牌（详见成曲规则）</li>
+              </ul>
+            </li>
+            <li><strong>回合结束阶段</strong>：从牌库抽牌补充音符队列（不足六张补至六张，反之补一张）</li>
+          </ol>
+        </div>
+
+        <div class="rule-section">
+          <h3>乐章成曲</h3>
+          <p>若手牌与场上音符队列满足乐章上的唱名（类型与数量），可执行成曲：</p>
+          <ul>
+            <li>打出一张乐章牌，排列并展示所用音符牌</li>
+            <li>其他玩家确认后，乐章置于面前视为已完成</li>
+            <li>若乐章有特殊效果，先结算再抽新乐章</li>
+          </ul>
+          <p><strong>使用音符队列成曲条件</strong>：使用至少两张队列牌，且所有用到的音符牌需彼此相连，对应唱名序列在乐章中也需相连。</p>
+          <p><strong>使用手牌成曲</strong>：无以上限制，且任意两张同唱名手牌可视为一张彩虹牌。</p>
+          <p>每回合限一次特殊音符牌效果。</p>
+        </div>
+
+        <div class="rule-section">
+          <h3>游戏结束</h3>
+          <p>当玩家一共完成 X 张乐章时，该轮结束后游戏结束：</p>
+          <table class="rule-table">
+            <tr><th>人数</th><td>2人</td><td>3人</td><td>4人</td><td>5人</td></tr>
+            <tr><th>X</th><td>7</td><td>10</td><td>14</td><td>19</td></tr>
+          </table>
+          <p>得分最高者获胜。平局时音符牌较多者胜；仍平局则共同胜利。</p>
+        </div>
+      </article>
     </div>
   </section>
 

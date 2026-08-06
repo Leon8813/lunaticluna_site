@@ -505,6 +505,224 @@ img { max-width: 100%; height: auto; display: block; }
 
 .contact-icon { font-size: 1.2rem; }
 
+.contact-icon { font-size: 1.2rem; }
+
+/* ---- Game Detail (games page) ---- */
+.game-detail {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.game-detail-header {
+  display: flex;
+  gap: 32px;
+  padding: 32px;
+  border-bottom: 1px solid var(--border);
+}
+
+.game-detail-cover {
+  flex: 0 0 240px;
+  height: 320px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.cover-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #2a1050, #4a2080);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  border: 1px solid var(--border);
+}
+
+.game-detail-meta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.game-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border: 1px solid var(--accent-gold);
+  border-radius: 20px;
+  color: var(--accent-gold);
+  font-size: 0.8rem;
+  width: fit-content;
+}
+
+.game-detail-meta h2 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  color: var(--accent-gold);
+}
+
+.game-tagline {
+  color: var(--text-secondary);
+  font-style: italic;
+  font-size: 1.05rem;
+}
+
+.game-stats {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.game-stat {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.stat-icon { font-size: 1.1rem; }
+
+.game-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.tag {
+  padding: 4px 12px;
+  background: rgba(160, 96, 255, 0.1);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: var(--accent);
+}
+
+.game-detail-body {
+  padding: 32px;
+}
+
+.game-section {
+  margin-bottom: 28px;
+}
+
+.game-section:last-child { margin-bottom: 0; }
+
+.game-section h3 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--accent-gold);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.game-section p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.game-section ul, .game-section ol {
+  color: var(--text-secondary);
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+.game-section li { margin-bottom: 4px; }
+
+.game-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ---- Rule Cards ---- */
+.rule-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
+}
+
+.rule-card h2 {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  color: var(--accent-gold);
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.rule-section {
+  margin-bottom: 24px;
+}
+
+.rule-section:last-child { margin-bottom: 0; }
+
+.rule-section h3 {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.rule-section p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.rule-section ul, .rule-section ol {
+  color: var(--text-secondary);
+  padding-left: 24px;
+  line-height: 1.8;
+}
+
+.rule-section li { margin-bottom: 6px; }
+
+.rule-section ul ul, .rule-section ol ul {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.rule-table {
+  width: 100%;
+  max-width: 400px;
+  border-collapse: collapse;
+  margin: 12px 0;
+  color: var(--text-secondary);
+}
+
+.rule-table th, .rule-table td {
+  padding: 10px 16px;
+  border: 1px solid var(--border);
+  text-align: center;
+}
+
+.rule-table th {
+  background: rgba(160, 96, 255, 0.08);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .game-detail-header {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .game-detail-cover {
+    flex: none;
+    width: 100%;
+    height: 240px;
+  }
+  .game-detail-body { padding: 20px; }
+  .rule-card { padding: 20px; }
+}
+
 /* ---- Footer ---- */
 .footer {
   position: relative;
