@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>疯人月 · Lunatic Luna</title>
+  <meta name="description" content="疯人月同人桌游社团 · 东方Project主题桌游创作">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.svg">
+</head>
+<body>
+  <!-- 星夜背景 -->
+  <div class="starfield" id="starfield"></div>
+
+  <!-- 导航栏 -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🌙</span>
+        <span class="logo-text">疯人月</span>
+        <span class="logo-sub">Lunatic Luna</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/" class="active">首页</a></li>
+        <li><a href="games.html">桌游作品</a></li>
+        <li><a href="rules.html">规则书</a></li>
+        <li><a href="about.html">关于我们</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero 主视觉 -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">東方同人桌游社团</div>
+      <h1 class="hero-title">
+        <span class="title-line">幻想的境界中</span>
+        <span class="title-line accent">以桌游相遇</span>
+      </h1>
+      <p class="hero-desc">
+        疯人月（Lunatic Luna）是一个专注于东方Project主题桌游创作的同人社团。
+        我们相信，最好的故事，是与朋友们围坐在桌前共同编织的。
+      </p>
+      <div class="hero-actions">
+        <a href="games.html" class="btn btn-primary">探索作品</a>
+        <a href="about.html" class="btn btn-ghost">了解社团</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="moon-orbit">
+        <div class="moon"></div>
+        <div class="orbit-ring"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 作品展示 -->
+  <section class="section" id="featured">
+    <div class="section-header">
+      <h2 class="section-title">代表作品</h2>
+      <p class="section-sub">每一款桌游，都是一段幻想乡的旅程</p>
+    </div>
+    <div class="games-grid" id="gamesGrid">
+      <!-- JS 动态渲染 -->
+    </div>
+  </section>
+
+  <!-- 社团数据 -->
+  <section class="section section-dark">
+    <div class="stats-row">
+      <div class="stat-item">
+        <span class="stat-num" data-target="0">—</span>
+        <span class="stat-label">桌游作品</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">∞</span>
+        <span class="stat-label">幻想入り</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">东方</span>
+        <span class="stat-label">主题</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">🌙</span>
+        <span>疯人月 · Lunatic Luna</span>
+      </div>
+      <p class="footer-copy">
+        © 2026 Lunatic Luna. 东方Project原作：上海爱丽丝幻乐团
+      </p>
+      <p class="footer-note">幻想乡的桌游，由我们亲手打造。</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
